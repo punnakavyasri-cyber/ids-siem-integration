@@ -40,15 +40,15 @@ The project covers custom Suricata rule creation, SPL query development, dashboa
 
 ## 🚀 Project Workflow  
 
-1. Set up **Suricata IDS** on Ubuntu, enable EVE JSON logging, and test detection using PCAP replay and custom rules. 
-   <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SuricataSetup.md">👉 Detail steps for this stage are here</a> <br>  
-2. Install and configure **Splunk Enterprise**, create indexes and users, and prepare it to ingest Suricata logs.  
+1. Set up **Suricata IDS** on Ubuntu, enable EVE JSON logging, and test detection using PCAP replay and custom rules. <br>
+   👉 <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SuricataSetup.md"> Detail steps for this stage are here</a> <br>  
+3. Install and configure **Splunk Enterprise**, create indexes and users, and prepare it to ingest Suricata logs.  
    👉 Detail steps for this stage are here
-3. Integrate **Suricata with Splunk** by modifying configuration files and setting up data inputs in the Splunk UI.  
+4. Integrate **Suricata with Splunk** by modifying configuration files and setting up data inputs in the Splunk UI.  
    👉 Detail steps for this stage are here 
-4. Build **dashboards, SPL queries, and alerts** in Splunk to detect and visualize threats.  
+5. Build **dashboards, SPL queries, and alerts** in Splunk to detect and visualize threats.  
    👉 Detail steps for this stage are here
-5. Run a new **PCAP file** through Suricata and validate detections in dashboards and alerts.  
+6. Run a new **PCAP file** through Suricata and validate detections in dashboards and alerts.  
    👉 Detail steps for this stage are here
 
 ## 🔮 Future Expansions  
