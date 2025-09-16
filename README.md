@@ -40,8 +40,8 @@ The project covers custom Suricata rule creation, SPL query development, dashboa
 
 ## 🚀 Project Workflow  
 
-1. Set up **Suricata IDS** on Ubuntu, enable EVE JSON logging, and test detection using PCAP replay and custom rules.  
-   👉 Detail steps for this stage are here  
+1. Set up **Suricata IDS** on Ubuntu, enable EVE JSON logging, and test detection using PCAP replay and custom rules. 
+   <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SuricataSetup.md">👉 Detail steps for this stage are here</a> <br>  
 2. Install and configure **Splunk Enterprise**, create indexes and users, and prepare it to ingest Suricata logs.  
    👉 Detail steps for this stage are here
 3. Integrate **Suricata with Splunk** by modifying configuration files and setting up data inputs in the Splunk UI.  
