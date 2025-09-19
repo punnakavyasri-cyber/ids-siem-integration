@@ -138,7 +138,7 @@ Check that Suricata generated events before moving to Splunk:
 ```bash
 cat /var/log/suricata/eve.json | jq
 ```
-Example output:
+Example output: <br>
 ![08-LogsLoadingInToEveJSON](https://github.com/user-attachments/assets/3bb20e24-42dc-4ff9-9b5a-1a3b07f378a6)
 
 You can also inspect full JSON entries by sorting with event_type:
