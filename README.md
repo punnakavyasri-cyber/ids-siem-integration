@@ -12,15 +12,15 @@ The project covers custom Suricata rule creation, SPL query development, dashboa
 - Create **SPL queries, dashboards, and alerts** to monitor attacker activity  
 - Simulate and analyze multiple attack scenarios:  
   - **Log4j exploitation** (CVE-2021-44228)  
-  - **WarmCookie malware campaign (2024-08-15)**  
-  - **You Dirty Rat! (2024-07-30)**  
+  - **WarmCookie malware campaign** (2024-08-15)
+  - **You Dirty Rat!** (2024-07-30)  
 - Build a repeatable lab environment that mirrors **professional SOC operations**  
  
 ## 🛠️ Technologies Used  
 
 - **Suricata IDS/IPS** – PCAP replay, log generation, custom rules  
 - **Splunk Enterprise** – SIEM for log ingestion, SPL queries, dashboards, alerts  
-- **Malware Traffic Analysis PCAPs** – Log4j, WarmCookie, You Dirty Rat!  
+- **Malware Traffic Analysis PCAPs** – Log4j, WarmCookie 
 - **Ubuntu 22.04** – Lab environments  
 - **EVE JSON + SPL** – Log format and query language  
 - **Utilities** – tcpdump, wget/curl, jq, Bash, unzip  
