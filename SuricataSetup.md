@@ -199,7 +199,9 @@ cat /home/ubuntu/suricatatest/logs/fast.log
 **Expected Output:**
 <img width="694" height="22" alt="image" src="https://github.com/user-attachments/assets/393f93ec-8bd4-408a-aa4f-e67b04e4b38f" />
 
-
+<br>
+<br>
+Next step → <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkSetup.md"> [Splunk Installation & Configuration] </a>
 
 
 
