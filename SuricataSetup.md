@@ -201,7 +201,8 @@ cat /home/ubuntu/suricatatest/logs/fast.log
 
 <br>
 <br>
-Next step → <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkSetup.md"> [Splunk Installation & Configuration] </a>
+
+**Next step** → <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkSetup.md"> **Splunk Installation & Configuration** </a>
 
 
 
