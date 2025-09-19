@@ -62,11 +62,12 @@ Instead of always using the `admin` account, it is a good practice to create a s
 **Splunk User Creation Page**  
 ![01-MonitorUserCreation](https://github.com/user-attachments/assets/a9527130-baa8-437e-88ef-a3eed803a9a5)
 
-
+</br>
+</br>
 
 **✅ Splunk Enterprise is now installed and configured with administrative access and a dedicated user.**
 
-**Next step → [Suricata–Splunk Integration]** (../03-suricata-splunk-integration.md)
+**Next step →** <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SuricataSplunkIntegration.md"> **[Suricata–Splunk Integration]** </a>
 
 
 
