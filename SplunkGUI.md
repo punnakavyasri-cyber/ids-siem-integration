@@ -184,4 +184,4 @@ After saving an alert:
 This makes the alert visible to non-admin users (e.g., `monitor_user`).  
 <br>
 <br>
-Next step → <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/FinalOutput.md"> [Final Output & SOC Workflow] </a>
+**Next step** → <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/FinalOutput.md"> **Final Output & SOC Workflow** </a>
