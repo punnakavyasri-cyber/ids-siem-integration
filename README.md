@@ -47,7 +47,7 @@ The project covers custom Suricata rule creation, SPL query development, dashboa
 4. Integrate **Suricata with Splunk** by modifying configuration files and setting up data inputs in the Splunk UI.  
    👉 <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SuricataSplunkIntegration.md"> Detail steps for this stage are here</a> 
 5. Build **dashboards, SPL queries, and alerts** in Splunk to detect and visualize threats.  
-   👉 Detail steps for this stage are here
+   👉 <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkGUI.md"> Detail steps for this stage are here</a>
 6. Run a new **PCAP file** through Suricata and validate detections in dashboards and alerts.  
    👉 Detail steps for this stage are here
 
