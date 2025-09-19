@@ -2,7 +2,6 @@
 
 This section explains how to integrate **Suricata** with **Splunk Enterprise** by modifying configuration files and setting up data inputs in the Splunk UI.  
 
----
 
 ## 1️⃣ Enable EVE JSON Logging in Suricata  
 Edit the default Suricata config:  
@@ -103,7 +102,6 @@ sudo /opt/splunk/bin/splunk restart
 Before checking Splunk, we need Suricata to produce logs from real traffic.  
 We will create a lab folder, download a malicious PCAP file, replay it with `tcpreplay`, and then validate both locally (`eve.json`) and inside Splunk.  
 
----
 
 ### 5.1 — Prepare the Lab Directory and PCAP  
 1. Create folders for PCAPs:  
