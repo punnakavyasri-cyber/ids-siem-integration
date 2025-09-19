@@ -180,5 +180,5 @@ index=suricata sourcetype=suricata:json | stats count by event_type
 
 ✅ Suricata is now fully integrated with Splunk. Logs from /var/log/suricata/eve.json are being parsed as JSON in the suricata index, ready for dashboards, SPL queries, and alerts.
 
-**Next step →** <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkGUI.md"> Dashboards, SPL Queries & Alerts </a>
+**Next step →** <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkGUI.md"> **Dashboards, SPL Queries & Alerts** </a>
 
