@@ -131,7 +131,8 @@ Explanation:
 - `.pcap` → the downloaded malicious traffic file
 
 Expected Output: <br>
-<img width="257" height="182" alt="image" src="https://github.com/user-attachments/assets/533d95eb-eca8-4096-bc1f-bc342b48c81d" />
+<img width="257" height="151" alt="491363126-533d95eb-eca8-4096-bc1f-bc342b48c81d" src="https://github.com/user-attachments/assets/43cf6905-a2aa-4b3b-8c4b-36a2af9589aa" />
+
 
 ### 5.3 — Validate Logs Locally with jq
 Check that Suricata generated events before moving to Splunk:
@@ -139,7 +140,8 @@ Check that Suricata generated events before moving to Splunk:
 cat /var/log/suricata/eve.json | jq
 ```
 Example output: <br>
-![08-LogsLoadingInToEveJSON](https://github.com/user-attachments/assets/3bb20e24-42dc-4ff9-9b5a-1a3b07f378a6)
+![08-LogsLoadingInToEveJSON](https://github.com/user-attachments/assets/e12a044a-10c8-49bb-8943-b119fd9f1114)
+
 
 You can also inspect full JSON entries by sorting with event_type:
 ```bash
