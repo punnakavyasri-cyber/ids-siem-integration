@@ -130,7 +130,7 @@ Explanation:
 - `--pps=200` → send 200 packets per second (you can adjust)
 - `.pcap` → the downloaded malicious traffic file
 
-Expected Output:
+Expected Output: <br>
 <img width="257" height="182" alt="image" src="https://github.com/user-attachments/assets/533d95eb-eca8-4096-bc1f-bc342b48c81d" />
 
 ### 5.3 — Validate Logs Locally with jq
