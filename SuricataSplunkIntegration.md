@@ -36,7 +36,7 @@ outputs:
         - flow
 
 ```
-Save & quit `(:wq).`
+Save & quit `(:wq)`.
 
 Restart Suricata to apply changes:
 ```bash
@@ -97,4 +97,83 @@ sudo vim transforms.conf
 ```bash
 sudo /opt/splunk/bin/splunk restart
 ```
+
+## 5️⃣ Generate Events for Verification  
+
+Before checking Splunk, we need Suricata to produce logs from real traffic.  
+We will create a lab folder, download a malicious PCAP file, replay it with `tcpreplay`, and then validate both locally (`eve.json`) and inside Splunk.  
+
+---
+
+### 5.1 — Prepare the Lab Directory and PCAP  
+1. Create folders for PCAPs:  
+```bash
+mkdir -p /home/ubuntu/pcaps/lab2
+cd /home/ubuntu/pcaps/lab2
+```
+2. Download a malicious PCAP (Log4j exploitation attempts in this example):
+``` bash
+wget https://www.malware-traffic-analysis.net/2021/12/13/2021-12-13-server-traffic-with-log4j-attempts.pcap.zip
+```
+3. Unzip the PCAP:
+```bash
+unzip 2021-12-13-server-traffic-with-log4j-attempts.pcap.zip
+```
+This will create the file:
+<img width="226" height="10" alt="image" src="https://github.com/user-attachments/assets/ccd9b280-66ff-474e-bad4-c8516743e216" />
+
+### 5.2 — Replay the PCAP with tcpreplay
+Run the PCAP through your active interface so Suricata can analyze it:
+```bash
+sudo tcpreplay -i <IFACE> --pps=200 2021-12-13-server-traffic-with-log4j-attempts.pcap
+```
+Explanation:
+- `-i enp0s3` → replace with your actual interface
+- `--pps=200` → send 200 packets per second (you can adjust)
+- `.pcap` → the downloaded malicious traffic file
+
+Expected Output:
+<img width="257" height="182" alt="image" src="https://github.com/user-attachments/assets/533d95eb-eca8-4096-bc1f-bc342b48c81d" />
+
+### 5.3 — Validate Logs Locally with jq
+Check that Suricata generated events before moving to Splunk:
+```bash
+cat /var/log/suricata/eve.json | jq
+```
+Example output:
+![08-LogsLoadingInToEveJSON](https://github.com/user-attachments/assets/3bb20e24-42dc-4ff9-9b5a-1a3b07f378a6)
+
+You can also inspect full JSON entries by sorting with event_type:
+```bash
+cat /var/log/suricata/eve.json | jq '.event_type' | sort | uniq -c
+```
+
+### 5.4 — Verify in Splunk  
+
+1. Log in to Splunk Web:  
+   - Open your browser → `http://localhost:8000` (or your VM’s IP:8000)  
+   - Use either:  
+     - **Admin credentials** you created during setup, **or**  
+     - A **dedicated user** you created (e.g., `soc_user` or `monitor_user`) with access to the `suricata` index.  
+
+2. Navigate to the Search app:  
+   - Top menu → **Apps → Search & Reporting**  
+   - Click **Search** in the left menu.  
+
+3. Run the following SPL query:  
+```spl
+index=suricata sourcetype=suricata:json | stats count by event_type
+```
+
+4. Review the results. You should see event types such as:
+- `alert`
+- `http`
+- `dns`
+- `tls`
+- `flow`
+
+Example — Splunk Stats Page
+![09-SplunkAlertCount](https://github.com/user-attachments/assets/54bc38e1-9401-48ec-b18e-199e30769371)
+
+
 
