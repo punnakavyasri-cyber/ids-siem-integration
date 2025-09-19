@@ -49,7 +49,7 @@ The project covers custom Suricata rule creation, SPL query development, dashboa
 5. Build **dashboards, SPL queries, and alerts** in Splunk to detect and visualize threats.  
    👉 <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/SplunkGUI.md"> Detail steps for this stage are here</a>
 6. Run a new **PCAP file** through Suricata and validate detections in dashboards and alerts.  
-   👉 Detail steps for this stage are here
+   👉 <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/FinalOutput.md"> Detail steps for this stage are here </a>
 
 ## 🔮 Future Expansions  
 
