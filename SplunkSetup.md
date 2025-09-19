@@ -36,7 +36,7 @@ sudo /opt/splunk/bin/splunk enable boot-start
 - If prompted, type `y` to confirm.
 
 ## 5️⃣ Access the Splunk Web Interface
-- Open your browser and go to: http://localhost:8000 (or) http://127.0.0.0:8000
+- Open your browser and go to: http://localhost:8000 (or) http://127.0.0.1:8000
   - If accessing remotely, replace `localhost` with the IP address of your VM (e.g., `http://192.168.1.100:8000`). <br>
 - Login using the admin credentials you just created.
   - Username: `admin` (or the username you set)
