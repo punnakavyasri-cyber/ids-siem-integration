@@ -125,5 +125,25 @@ This will show all raw events tied to that signature.
 
 ✅ This demonstrates how Suricata alerts give analysts visibility into **who was attacked, what was targeted, and how the attack occurred**.  
 <br>
+
+---
+
+## Incident Response Workflow  
+
+The detection and alerting workflow doesn’t stop at dashboards. In real SOC operations, alerts flow into the **Incident Response Lifecycle**, which guides analysts in handling threats effectively.  
+
+<img width="996" height="889" alt="Gemini_Generated_Image_i3y6s2i3y6s2i3y6" src="https://github.com/user-attachments/assets/17eb2019-7d98-4e32-a786-cf3d9617c7ba" />
+
+
+**Stages:**
+1. **Detection** – Identifying suspicious activity or alerts from Suricata/Splunk.  
+2. **Analysis & Triage** – Investigating the severity, scope, and priority.  
+3. **Containment** – Limiting the spread of malicious activity.  
+4. **Eradication** – Removing the threat (malware, bad IPs, compromised accounts).  
+5. **Recovery** – Restoring systems and monitoring for reinfection.  
+6. **Post-Incident Activity & Improvement** – Lessons learned, tuning rules, improving response playbooks.  
+
+
 <br>
+
 **Back to** → <a href="https://github.com/punnakavyasri-cyber/ids-siem-integration/blob/main/README.md"> **Main README** </a>
