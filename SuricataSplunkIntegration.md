@@ -172,8 +172,13 @@ index=suricata sourcetype=suricata:json | stats count by event_type
 - `tls`
 - `flow`
 
-Example — Splunk Stats Page
+**Example — Splunk Stats Page**
 ![09-SplunkAlertCount](https://github.com/user-attachments/assets/54bc38e1-9401-48ec-b18e-199e30769371)
 
+</br>
+</br>
 
+✅ Suricata is now fully integrated with Splunk. Logs from /var/log/suricata/eve.json are being parsed as JSON in the suricata index, ready for dashboards, SPL queries, and alerts.
+
+**Next step →** Dashboards, SPL Queries & Alerts
 
