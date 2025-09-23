@@ -27,8 +27,6 @@ The project covers custom Suricata rule creation, SPL query development, dashboa
 
 ## 🏗️ Project Architecture
 
-### High-Level Flow
-
 ![Architecture Diagram](https://github.com/user-attachments/assets/d9cae879-4264-42c9-8ef6-d99771cdcaf0)
 
 ## 📋 Prerequisites  
